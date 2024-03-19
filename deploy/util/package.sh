@@ -18,12 +18,12 @@ cat $LITEMALL_HOME/litemall-db/sql/litemall_data.sql >> $LITEMALL_HOME/deploy/db
 
 # 打包litemall-admin
 cd $LITEMALL_HOME/litemall-admin
-npm install --registry=https://registry.npm.taobao.org
+npm install --registry=https://registry.npmmirror.com
 npm run build:dep
 
 # 打包litemall-vue
 cd $LITEMALL_HOME/litemall-vue
-npm install --registry=https://registry.npm.taobao.org
+npm install --registry=https://registry.npmmirror.com
 npm run build:dep
 
 cd $LITEMALL_HOME
